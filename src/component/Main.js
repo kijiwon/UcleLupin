@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import contentData from "../data/contentData";
-import styled from "styled-components";
+import { useState, useEffect } from 'react';
+import contentData from '../data/contentData';
+import styled from 'styled-components';
 
 const ContentSection = styled.section`
     margin: 0 auto;
@@ -45,13 +45,13 @@ const ContentList = styled.ul`
         width: 100%;
         height: 180px;
         margin-bottom: 10px;
-        border-radius: 10px;
+        border-radius : 10px;
     }
 
     span {
         display: block;
         text-align: left;
-        font-size: 1.8em;
+        font-size :1.8em;
         margin-bottom: 20px;
     }
 
@@ -80,6 +80,8 @@ const ContentItem = styled.li`
 
 function Main() {
     const [content, setContent] = useState(contentData);
+
+    
 
     return (
         <ContentSection>

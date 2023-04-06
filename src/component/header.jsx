@@ -31,18 +31,18 @@ const Logo = styled.div`
 `;
 
 const Nav = styled.nav`
-    .menuList {
+    ul {
         list-style: none;
         display: flex;
         align-items: center;
     }
-    .menu {
+    .list {
         @media (max-width: 992px) {
             display: none;
         }
     }
 
-    .list {
+    li {
         font-size: 10pt;
         color: #4b5a77;
         font-weight: 600;
@@ -83,19 +83,19 @@ function Header() {
                 <Logo></Logo>
             </Link>
             <Nav>
-                <ul className="menuList">
-                    <li className="list menu">수강 중인 코스</li>
-                    <li className="list menu">코플릿</li>
-                    <li className="list menu">Jobs</li>
-                    <li className="list desktopIcon" onClick={toggleModal}>
+                <ul>
+                    <li className="list">수강 중인 코스</li>
+                    <li className="list">코플릿</li>
+                    <li className="list">Jobs</li>
+                    <li className="desktopIcon" onClick={toggleModal}>
+                        {isModalOpen ? <List /> : null}
                         <FontAwesomeIcon icon={faCircleUser} />
                     </li>
-                    <li className="list mobileIcon" onClick={toggleMModal}>
+                    <li className="mobileIcon" onClick={toggleMModal}>
+                        {isMModalOpen ? <ListMobile /> : null}
                         <FontAwesomeIcon icon={faBars} />
                     </li>
                 </ul>
-                {isModalOpen ? <List /> : null}
-                {isMModalOpen ? <ListMobile /> : null}
             </Nav>
         </HeaderContainer>
     );
