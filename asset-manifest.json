@@ -1,5 +1,6 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.css": "/static/css/main.5a3ad750.css",
     "main.js": "/static/js/main.d6a912de.js",
     "static/media/ki.jpg": "/static/media/ki.55a36d399e5382c5c44b.jpg",
@@ -12,5 +13,19 @@
   "entrypoints": [
     "static/css/main.5a3ad750.css",
     "static/js/main.d6a912de.js"
+=======
+    "main.css": "./static/css/main.964fdded.css",
+    "main.js": "./static/js/main.985f8746.js",
+    "static/media/지원님프로필.jpg": "./static/media/지원님프로필.55a36d399e5382c5c44b.jpg",
+    "static/media/현진님프로필.png": "./static/media/현진님프로필.b487ef96d93f7538b001.png",
+    "static/media/예슬님프로필.jpg": "./static/media/예슬님프로필.6628cef8b9b42fb603ef.jpg",
+    "index.html": "./index.html",
+    "main.964fdded.css.map": "./static/css/main.964fdded.css.map",
+    "main.985f8746.js.map": "./static/js/main.985f8746.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.964fdded.css",
+    "static/js/main.985f8746.js"
+>>>>>>> dcf175dbf73518f530d3201b39a35960a32bd07f
   ]
 }
